@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="initial-message">
+            <h2>K gardai hunuhunxa?</h2>
+            <button class="button" onclick="handleActivity('nachdai')">Nachdai Chu</button>
+            <button class="button" onclick="handleActivity('baseyako')">Baseyako Xu</button>
+            <button class="button" onclick="handleActivity('geet')">Geet Gaudai Xu</button>
+        </div>
+        <div id="follow-up-message" class="hidden">
+            <p id="message-text"></p>
+            <button id="continue-button" class="button hidden" onclick="continueLink()">Continue</button>
+            <button id="hunxa-button" class="button hidden" onclick="finalLink()">Hunxa</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
